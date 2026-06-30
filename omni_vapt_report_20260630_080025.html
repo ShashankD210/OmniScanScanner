@@ -1,0 +1,82 @@
+
+        <html>
+        <head><style>
+            body { font-family: sans-serif; margin: 20px; }
+            .high { color: red; font-weight: bold; }
+            .medium { color: orange; font-weight: bold; }
+            .low { color: blue; font-weight: bold; }
+            .critical { color: darkred; font-weight: bold; }
+            .verified { background-color: #ffe6e6; border-left: 5px solid red; padding: 10px; margin: 10px 0; }
+            .cve-card { background-color: #f5f5f5; border: 1px solid #ddd; padding: 10px; margin: 10px 0; }
+            table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+            th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+            th { background-color: #4CAF50; color: white; }
+        </style></head>
+        <body>
+            <h1>VAPT Audit Report with CVE Database</h1>
+            <p>Generated: 2026-06-30T08:00:25.292071+00:00</p>
+
+            <h2>Network Findings</h2>
+            
+                <table>
+                    <tr>
+                        <th>Port</th>
+                        <th>Service</th>
+                        <th>Severity</th>
+                        <th>Details</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>80</td>
+                        <td>Cloudflare http proxy</td>
+                        <td><span class="low">low</span></td>
+                        <td>No known CVEs for Cloudflare http proxy unknown</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>443</td>
+                        <td>Cloudflare http proxy</td>
+                        <td><span class="low">low</span></td>
+                        <td>No known CVEs for Cloudflare http proxy unknown</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>8080</td>
+                        <td>Cloudflare http proxy</td>
+                        <td><span class="low">low</span></td>
+                        <td>No known CVEs for Cloudflare http proxy unknown</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>8443</td>
+                        <td>Cloudflare http proxy</td>
+                        <td><span class="low">low</span></td>
+                        <td>No known CVEs for Cloudflare http proxy unknown</td>
+                    </tr>
+                    
+                </table>
+            
+
+            <h2>Web Findings (Verified)</h2>
+            
+                
+                <div class="verified">
+                    <strong>URL:</strong> https://example.com/ <br>
+                    <strong>Status:</strong> Missing headers: X-Frame-Options, Content-Security-Policy, Strict-Transport-Security, X-Content-Type-Options<br>
+                    <strong>Severity:</strong> <span class="high">high</span>
+                </div>
+                
+            
+
+            
+            <h2>CVE Database Statistics</h2>
+            <ul>
+                <li>Total CVEs in Database: 0</li>
+                <li>Unique Products: 0</li>
+                <li>CVEs from NVD: 0</li>
+                <li>CVEs from CIRCL: 0</li>
+            </ul>
+            
+        </body>
+        </html>
+        

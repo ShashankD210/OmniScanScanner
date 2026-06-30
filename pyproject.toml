@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["cli"]
+packages = ["omni_vapt"]
+
+[project]
+name = "omni_vapt"
+version = "1.0.0"
+description = "All-in-One Vulnerability Assessment Scanner"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.11"
+dependencies = [
+    "python-nmap",
+    "requests",
+    "rich",
+    "jinja2",
+    "dnspython",
+    "shodan",
+    "beautifulsoup4",
+    "wafw00f",
+    "arjun",
+    "python-libnmap",
+    "dirsearch",
+    "paramiko",
+    "pwntools",
+    "scapy",
+    "mitmproxy",
+    "websockets",
+    "smbmap",
+]
+
+[project.scripts]
+omni-vapt = "cli:main"

@@ -1,0 +1,17 @@
+python-nmap
+requests
+rich
+jinja2
+dnspython
+shodan
+beautifulsoup4
+wafw00f
+arjun
+python-libnmap
+dirsearch
+paramiko
+pwntools
+scapy
+mitmproxy
+websockets
+smbmap
